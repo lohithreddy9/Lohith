@@ -69,9 +69,7 @@ int main( int argc, char* arg[] )
     } 
     else
     {
-        
-        close( fdone[0] );
-         
+        close( fdone[0] ); 
         while( (readCounter = read( fileOpen, readBuff, sizeof( readBuff ) ) > 0 ) )  
         {
         write( fdone[1], readBuff, sizeof( readBuff ) );
